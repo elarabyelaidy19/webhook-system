@@ -14,10 +14,6 @@ A Ruby on Rails API for managing webhooks with secure delivery and event trackin
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [API Documentation](#api-documentation)
-- [Development](#development)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -68,3 +64,23 @@ make up
 
 - Create a `.env` file and set the necessary environment variables.
 - Use the provided `.env.example` as a template.
+
+
+## API Documentation
+
+## API Endpoints
+
+### Authentication
+
+- **Sign Up**: `POST /auth/signup`
+- **Login**: `POST /auth/login`
+
+### Webhooks
+
+`Authorization: Bearer <token>`
+
+- **List Webhooks**: `GET /webhooks`
+- **Create Webhook**: `POST /webhooks`
+- **Get Webhook**: `GET /webhooks/:id`
+- **Update Webhook**: `PUT /webhooks/:id`
+- **Delete Webhook**: `DELETE /webhooks/:id`
